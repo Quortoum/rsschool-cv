@@ -2,7 +2,16 @@
     font-family: Montserrat;
     src: url(../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
-
+@media (max-width: 768px) {
+    .main-section {
+      width: 100%;
+    }
+  }
+:root {
+    --bg-color: #30403B;
+    --decor-color: #8BAAA0;
+    --text-color: #BFB19D;
+}
 * {
     box-sizing: border-box;
 }
@@ -19,19 +28,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #30403B;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 .main-header {
-    border: 1px solid #8BAAA0;
+    border: 2px solid var(--decor-color)
 }
 
 .main-main {
-    border: 2px solid #8BAAA0;
+    border: 0px solid var(--decor-color);
 }
 
 .main-footer {
-    border: 2px solid #8BAAA0;
+    border: 2px solid var(--decor-color);
 }
 
 .container {
@@ -39,36 +49,82 @@ body {
     margin: 0 auto;
 }
 
-.nav-list {
+.nav-list { /*Выровнял и прижал верхнее меню к правой стенке. Убрал оформление по умолчанию*/
     display: flex;
     justify-content: flex-end;
     align-items: center;
     list-style: none;
 }
 
-.nav-link {
+.nav-link { /**/
     padding: 0 20px;
     line-height: 50px;
     text-decoration: none;
-    color: #BFB19D;
+    color: var(--text-color);
     font-weight: 400;
     font-size: 110%;
 }
-.nav-link {
+.nav-link { /*Line animation under header navigation menu*/
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 1px;
-    
     transition: background-size .5s;
 }
-.nav-link:hover {
+.nav-link:hover { /*when mouse is moving on link, what is happening*/
     background-size: 100% 1px;
     font-weight: 500;
 }
-/*.nav-link:hover {
+/*.nav-link:hover { 
     border: 1px solid #8BAAA0;
     padding: 20px 20px;
     font-weight: 500;
     transition: .5s ease-in-out;
 }*/
+.main-container { /*Выравнивание и деление <section> на две колонны */
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-section { 
+    margin: 20px 0 0 0;
+    width: 50%;
+}
+
+.section-title {
+    text-transform: uppercase;
+}
+
+#photoId { /*Типа выровнял фото*/
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+#photoId { /*Полоска под фото*/
+    background-image: linear-gradient(var(--decor-color), var(--decor-color));
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 95% 8px;
+    padding: 0 0 30px 0;
+}
+.main-photo {
+    border: 1px solid var(--decor-color);
+    box-shadow: 0 0 0px var(--text-color);
+}
+#profileId { /*Выровнял Имя и позицию*/
+    text-align: center;
+    justify-content: center;
+}
+#profileId { /*Line under name and position*/
+    background-image: linear-gradient(var(--decor-color), var(--decor-color));
+    background-position: -10% 100%;
+    background-repeat: no-repeat;
+    background-size: 95% 8px;
+    padding: 1.5% 0 0 0;
+}
+.name { /*Сделал полоску между именем и позицией*/
+    background-image: linear-gradient(var(--decor-color), var(--decor-color));
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 50% 1px;
+    padding: 20px 0;
+}
