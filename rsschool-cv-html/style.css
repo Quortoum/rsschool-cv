@@ -58,6 +58,7 @@ a {
 .container {
     max-width: 1440px;
     margin: 0 auto;
+    line-height: 150%;
 }
 
 .nav-list { /*Выровнял и прижал верхнее меню к правой стенке. Убрал оформление по умолчанию*/
@@ -147,19 +148,66 @@ a {
     padding: 20px 0;
 }
 
-.contact-links { /*Подровнял и настроил вид списка*/
-    margin: 5% 10%;
-    font-size: 110%;
-    line-height: 150%;
+.main-section { /*Подчёркивание (линия) всем оставшимся блокам CV*/
+    background-image: linear-gradient(var(--decor-color),var(--decor-color));
+    background-repeat: no-repeat;
+    background-position: 20% 100%;
+    background-size: 85% 1px;
 }
-.contacts-a {
+
+.contact-links { /*Подровнял и настроил вид списка*/
+    list-style: none;
+    margin: 5% 5%;
+    font-size: 110%;
+    line-height: 200%;
+}
+.contacts-a { /*Добавил стиля ссылкам в контактах*/
     color: var(--decor-color);
     transition: background-color .5s;
 }
 .contacts-a:hover {
     background-color:rgba(191, 177, 157, 0.2);
     font-weight: 500;
-     
+}
+/*Иконки перед контактами*/
+.main-section li:nth-child(1):before {
+    content: url(../assets/img/icons/location-icon24x24.png);
+    margin: 0 10px 0 0;
+}
+.main-section li:nth-child(2):before {
+    content: url(../assets/img/icons/mail-icon24x24\(2\).png);
+    margin: 0 10px 0 0;
+}
+.main-section li:nth-child(3):before {
+    content: url(../assets/img/icons/phone-icon24x24.png);
+    margin: 0 10px 0 0;
+}
+.main-section li:nth-child(4):before {
+    content: url(../assets/img/icons/discord-icon24x24.png);
+    margin: 0 10px 0 0;
+}
+.main-section li:nth-child(5)::before {
+    content: url(../assets/img/icons/github-icon24x24.png);
+    margin: 0 10px 0 0;
+}
+.main-section li:nth-child(6):before {
+    content: url(../assets/img/icons/telegram-icon24x24.png);
+    margin: 0 10px 0 0;
+}
+
+.global-paragraph { /*Добавил параграфам с текстом отступы*/
+    margin: 5% 15%;
+}
+.main-code {/*уменьшил блок кода и разместил по центру*/
+    width: 100%;
+    margin: 0 0 0 0%;
+}
+pre {
+    background-color: rgba(139, 170, 160, 0.1);
+    width: 80%;
+    margin: 0 0 0 10%;
+    padding-left: -20%;
+    
 }
 
 .rsschool-logo {

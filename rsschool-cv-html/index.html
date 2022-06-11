@@ -29,8 +29,8 @@
               <a href="#english" class="nav-link">English</a>
             </li>
             <li class="nav-item">
-                <a href="#courses" class="nav-link">Courses</a>
-              </li>
+              <a href="#courses" class="nav-link">Courses</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -38,88 +38,158 @@
 
     <main class="main-main">
       <div class="container main-container">
-
+        <!--photo-->
         <section class="main-section" id="photoId">
-          <img class="main-photo" src="../assets/img/CV photo.png" alt="photo-cv">
+          <img
+            class="main-photo"
+            src="../assets/img/CV photo.png"
+            alt="photo-cv"
+          />
         </section>
-
+        <!--name-->
         <section class="main-section" id="profileId">
           <h1 class="name-title name">Maxim Rudnev</h1>
           <h3 class="name-title">Frontend Javascript Developer</h3>
         </section>
-
-        <section class="main-section" id="contactId">
+        <!--contacts-->
+        <section id="contact-info" class="main-section" id="contactId">
           <h2 class="section-title">Contact info</h2>
           <ul class="contact-links">
-              <li>e-mail: <a class="contacts-a" href="mailto:ya.boom128@gmail.com" title="mail">ya.boom128@gmail.com</a></li>
-              <li>phone: <a class="contacts-a" href="tel+380112223344" title="phone">+38 (011) 222 33 44</a></li>
-              <li>discord: nickname in RSS chanel <a class="contacts-a" href="https://discord.gg/CnGM7SCJ" title="discord chanel"> (@Quortoum)</a> </li>
-              <li>github: <a class="contacts-a" href="https://github.com/Quortoum" title="github">Quortoum</a></li>
-              <li>telegram: <a class="contacts-a" href="https://t.me/Quortoum" title="telegram">Quortoum</a></li>
+            <li class="item-link-contacts">
+              location:
+              <a
+                class="contacts-a"
+                href="https://goo.gl/maps/eycYSRzc3bAA5MgZ6"
+                title="geoposition"
+                target="_blank"
+                >Kyiv, Ukraine</a
+              >
+            </li>
+            <li class="item-link-contacts">
+              e-mail:
+              <a
+                class="contacts-a"
+                href="mailto:ya.boom128@gmail.com"
+                title="mail"
+                target="_blank"
+                >ya.boom128@gmail.com</a
+              >
+            </li>
+            <li class="item-link-contacts">
+              phone:
+              <a
+                class="contacts-a"
+                href="tel+380112223344"
+                title="phone"
+                target="_blank"
+                >+38 (011) 222 33 44</a
+              >
+            </li>
+            <li class="item-link-contacts">
+              discord: nickname in RSS chanel
+              <a
+                class="contacts-a"
+                href="https://discord.gg/CnGM7SCJ"
+                title="discord chanel"
+                target="_blank"
+              >
+                (@Quortoum)</a
+              >
+            </li>
+            <li class="item-link-contacts">
+              github:
+              <a
+                class="contacts-a"
+                href="https://github.com/Quortoum"
+                title="github"
+                target="_blank"
+                >Quortoum</a
+              >
+            </li>
+            <li class="item-link-contacts">
+              telegram:
+              <a
+                class="contacts-a"
+                href="https://t.me/Quortoum"
+                title="telegram"
+                target="_blank"
+                >Quortoum</a
+              >
+            </li>
           </ul>
         </section>
-
-        <section class="main-section" id="aboutId">
+        <!--about-->
+        <section id="about-me" class="main-section" id="aboutId">
           <h2 class="section-title">About me</h2>
-          <p>I have some experience in negotiation in industrial insurance field, 
-              B2B sales, data base filling. And most of my experience is based on automotive industry 
-              - spare parts and car repair.
-
-            But all of that is not my destiny. I want something bigger, something more interesting, 
-            creative that will makes me growth as person and professional in incredible field of technology.
-            
-            Few years ago I begun to do my first steps in IT and start studying on some courses C# . 
-            It was looks like the man, who can't swim, falls in sharks pool. But it was fun and interesting 
-            with some new experience I dream about. One or two years later I decided to continue that pass 
-            of IT warrior and went to Frontend JavaScript course. Between C# and JS I also tried 
-            do self education, but biggest weakness of that idea - bad studying plan and learning 
-            structure without mentoring.</p>
+          <p class="global-paragraph">
+            I have some experience in negotiation in industrial insurance field,
+            B2B sales, data base filling. And most of my experience is based on
+            automotive industry - spare parts and car repair.
+            <br /><br />
+            But all of that is not my destiny. I want something bigger,
+            something more interesting, creative that will makes me growth as
+            person and professional in incredible field of technology.
+            <br /><br />
+            Few years ago I begun to do my first steps in IT and start studying
+            on some courses C# . It was looks like the man, who can't swim,
+            falls in sharks pool. But it was fun and interesting with some new
+            experience I dream about. One or two years later I decided to
+            continue that pass of IT warrior and went to Frontend JavaScript
+            course. Between C# and JS I also tried do self education, but
+            biggest weakness of that idea - bad studying plan and learning
+            structure without mentoring.
+          </p>
         </section>
-
-        <section class="main-section" id="codeId">
+        <!--code-->
+        <section id="code-examples" class="main-section" id="codeId">
           <h2 class="section-title">Code examples</h2>
-          <p>
-            Implement a combineArrays function that takes 2 arrays of numbers (first and second) 
-            and returns an array of numbers where N[i] is the sum of the numbers first[i] and second [i].
+          <p class="global-paragraph">
+            Implement a combineArrays function that takes 2 arrays of numbers
+            (first and second) and returns an array of numbers where N[i] is the
+            sum of the numbers first[i] and second [i].
           </p>
-          <code>
-              function combineArrays(first, second) {
-            let arrN = [];
-          
-            for (let i = 0 ; i < first.length ; i++) {
-              let n = first[i] + second[i];
-              arrN.push(n);
-            }
-          
-            return arrN;
-        </code>
-        <p>No IT work experience...yet ;)</p>
+          <p class="main-code">
+            <code>
+              <pre>
+                  function combineArrays(first, second) {
+                    let arrN = [];
+                
+                    for (let i = 0 ; i < first.length ; i++) {
+                      let n = first[i] + second[i];
+                      arrN.push(n);
+                    }
+                    
+                  return arrN;
+                  }
+              </pre>
+            </code>
+          </p>
+          <p class="global-paragraph">No IT work experience...yet ;)</p>
         </section>
-
-        <section class="main-section" id="educationId">
+        <!--education-->
+        <section id="education" class="main-section" id="educationId">
           <h2 class="section-title">Education</h2>
-          <p>Kyiv National Economic University of Vadym Hetman (KNEU)
-
-            Personnel managment (Human resourses) and Labor economics masters degree</p>
-        </section>
-
-        <section class="main-section" id="englishId">
-          <h2 class="section-title">English</h2>
-          <p>
-            Pre-Intermediate (A2)
-
-            For now refreshing my knowledge in Duolingo
+          <p class="global-paragraph">
+            Kyiv National Economic University of Vadym Hetman (KNEU) <br> Personnel
+            managment (Human resourses) and Labor economics masters degree
           </p>
         </section>
-
-        <section class="main-section" id="coursesId">
-            <h2 class="section-title">Courses</h2>
-            <ul>
-                <li>AmCham lectures in field of HR</li>
-                <li>C# basics</li>
-                <li>Frontend: HTML & CSS, JavaScript</li>
-            </ul>
-          </section>
+        <!--english-->
+        <section id="english" class="main-section" id="englishId">
+          <h2 class="section-title">English</h2>
+          <p class="global-paragraph">
+            Pre-Intermediate (A2) For now refreshing my knowledge in Duolingo
+          </p>
+        </section>
+        <!--courses-->
+        <section id="courses" class="main-section" id="coursesId">
+          <h2 class="section-title">Courses</h2>
+          <ul>
+            <li>AmCham lectures in field of HR</li>
+            <li>C# basics</li>
+            <li>Frontend: HTML & CSS, JavaScript</li>
+          </ul>
+        </section>
       </div>
     </main>
 
@@ -129,7 +199,11 @@
           <span>© 2022</span>
           <a class="github-link" href="https://github.com/Quortoum">Quortoum</a>
         </section>
-        <img class="rsschool-logo" src="../assets/img/RSSchool.png" alt="RSSchool-logo">
+        <img
+          class="rsschool-logo"
+          src="../assets/img/RSSchool.png"
+          alt="RSSchool-logo"
+        />
       </div>
     </footer>
   </body>
