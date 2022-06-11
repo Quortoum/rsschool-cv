@@ -32,8 +32,19 @@ body {
     color: var(--text-color);
 }
 
+a {
+    text-decoration: none;
+}
+
+/*.main-header {
+    border: 2px solid var(--bg-color);
+    background-color: var(--decor-color);
+    color: var(--bg-color);
+}*/
 .main-header {
-    border: 2px solid var(--decor-color)
+    border-bottom: 2px solid var(--decor-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 .main-main {
@@ -86,12 +97,19 @@ body {
     flex-wrap: wrap;
 }
 .main-section { 
-    margin: 20px 0 0 0;
+    margin: 20px 0 0 0px;
     width: 50%;
 }
-
-.section-title {
+.name-title { /*Отдельное форматирование имени и позиции, чтоб не было конфликта с блоками с информацией*/
     text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 8px;
+}
+.section-title { 
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 8px;
+    margin: 0 10%;
 }
 
 #photoId { /*Типа выровнял фото*/
@@ -127,4 +145,27 @@ body {
     background-repeat: no-repeat;
     background-size: 50% 1px;
     padding: 20px 0;
+}
+
+.contact-links { /*Подровнял и настроил вид списка*/
+    margin: 5% 10%;
+    font-size: 110%;
+    line-height: 150%;
+}
+.contacts-a {
+    color: var(--decor-color);
+    transition: background-color .5s;
+}
+.contacts-a:hover {
+    background-color:rgba(191, 177, 157, 0.2);
+    font-weight: 500;
+     
+}
+
+.rsschool-logo {
+    width: 10%;
+}
+.github-link {
+    text-decoration: none;
+    color: var(--text-color);
 }
