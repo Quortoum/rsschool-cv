@@ -1,6 +1,6 @@
 @font-face {
     font-family: Montserrat;
-    src: url(../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+    src: url(./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 @media (max-width: 768px) {
     .main-section {
@@ -171,27 +171,27 @@ a {
 }
 /*Иконки перед контактами*/
 .main-section .item-link-contacts:nth-child(1):before {
-    content: url(../assets/img/icons/location-icon24x24.png);
+    content: url(./assets/img/icons/location-icon24x24.png);
     margin: 0 10px 0 0;
 }
 .main-section .item-link-contacts:nth-child(2):before {
-    content: url(../assets/img/icons/mail-icon24x24\(2\).png);
+    content: url(./assets/img/icons/mail-icon24x24\(2\).png);
     margin: 0 10px 0 0;
 }
 .main-section .item-link-contacts:nth-child(3):before {
-    content: url(../assets/img/icons/phone-icon24x24.png);
+    content: url(./assets/img/icons/phone-icon24x24.png);
     margin: 0 10px 0 0;
 }
 .main-section .item-link-contacts:nth-child(4):before {
-    content: url(../assets/img/icons/discord-icon24x24.png);
+    content: url(./assets/img/icons/discord-icon24x24.png);
     margin: 0 10px 0 0;
 }
 .main-section .item-link-contacts:nth-child(5)::before {
-    content: url(../assets/img/icons/github-icon24x24.png);
+    content: url(./assets/img/icons/github-icon24x24.png);
     margin: 0 10px 0 0;
 }
 .main-section .item-link-contacts:nth-child(6):before {
-    content: url(../assets/img/icons/telegram-icon24x24.png);
+    content: url(./assets/img/icons/telegram-icon24x24.png);
     margin: 0 10px 0 0;
 }
 
@@ -214,7 +214,7 @@ pre {
 }
 
 .main-section .courses-item::before {
-    content: url(../assets/img/icons/circles/circle-solid16x16.png);
+    content: url(./assets/img/icons/circles/circle-solid16x16.png);
     margin: 0 10px 0 0;
 }
 
