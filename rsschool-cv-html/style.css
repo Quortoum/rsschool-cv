@@ -1,0 +1,255 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@media (max-width: 768px) {
+    .main-section {
+      width: 100%;
+    }
+  }
+:root {
+    --bg-color: #30403B;
+    --decor-color: #8BAAA0;
+    --text-color: #BFB19D;
+}
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Montserrat;
+    min-height: 100vh;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+/*.main-header {
+    border: 2px solid var(--bg-color);
+    background-color: var(--decor-color);
+    color: var(--bg-color);
+}*/
+.main-header {
+    border-bottom: 2px solid var(--decor-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.main-main {
+    border: 0px solid var(--decor-color);
+}
+
+.main-footer {
+    border-top: 2px solid var(--decor-color);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    line-height: 150%;
+}
+
+.nav-list { /*Выровнял и прижал верхнее меню к правой стенке. Убрал оформление по умолчанию*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link { /**/
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 110%;
+}
+.nav-link { /*Line animation under header navigation menu*/
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .5s;
+}
+.nav-link:hover { /*when mouse is moving on link, what is happening*/
+    background-size: 100% 1px;
+    font-weight: 500;
+}
+/*.nav-link:hover { 
+    border: 1px solid #8BAAA0;
+    padding: 20px 20px;
+    font-weight: 500;
+    transition: .5s ease-in-out;
+}*/
+.main-container { /*Выравнивание и деление <section> на две колонны */
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-section { 
+    margin: 20px 0 0 0px;
+    width: 50%;
+}
+.name-title { /*Отдельное форматирование имени и позиции, чтоб не было конфликта с блоками с информацией*/
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 8px;
+}
+.section-title { 
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 8px;
+    margin: 0 10%;
+}
+
+#photoId { /*Типа выровнял фото*/
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+#photoId { /*Полоска под фото*/
+    background-image: linear-gradient(var(--decor-color), var(--decor-color));
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 95% 8px;
+    padding: 0 0 30px 0;
+}
+.main-photo {
+    border: 1px solid var(--decor-color);
+    box-shadow: 0 0 0px var(--text-color);
+}
+#profileId { /*Выровнял Имя и позицию*/
+    text-align: center;
+    justify-content: center;
+}
+#profileId { /*Line under name and position*/
+    background-image: linear-gradient(var(--decor-color), var(--decor-color));
+    background-position: -10% 100%;
+    background-repeat: no-repeat;
+    background-size: 95% 8px;
+    padding: 1.5% 0 0 0;
+}
+.name { /*Сделал полоску между именем и позицией*/
+    background-image: linear-gradient(var(--decor-color), var(--decor-color));
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 50% 1px;
+    padding: 20px 0;
+}
+
+.main-section.line { /*Подчёркивание (линия) всем оставшимся блокам CV кроме English и Courses*/
+    background-image: linear-gradient(var(--decor-color),var(--decor-color));
+    background-repeat: no-repeat;
+    background-position: 20% 100%;
+    background-size: 85% 1px;
+}
+
+.contact-links { /*Подровнял и настроил вид списка*/
+    list-style: none;
+    margin: 5% 5%;
+    font-size: 110%;
+    line-height: 200%;
+}
+.contacts-a { /*Добавил стиля ссылкам в контактах*/
+    color: var(--decor-color);
+    transition: background-color .5s;
+}
+.contacts-a:hover {
+    background-color:rgba(191, 177, 157, 0.2);
+    font-weight: 500;
+}
+/*Иконки перед контактами*/
+.main-section .item-link-contacts:nth-child(1):before {
+    content: url(../assets/img/icons/location-icon24x24.png);
+    margin: 0 10px 0 0;
+}
+.main-section .item-link-contacts:nth-child(2):before {
+    content: url(../assets/img/icons/mail-icon24x24\(2\).png);
+    margin: 0 10px 0 0;
+}
+.main-section .item-link-contacts:nth-child(3):before {
+    content: url(../assets/img/icons/phone-icon24x24.png);
+    margin: 0 10px 0 0;
+}
+.main-section .item-link-contacts:nth-child(4):before {
+    content: url(../assets/img/icons/discord-icon24x24.png);
+    margin: 0 10px 0 0;
+}
+.main-section .item-link-contacts:nth-child(5)::before {
+    content: url(../assets/img/icons/github-icon24x24.png);
+    margin: 0 10px 0 0;
+}
+.main-section .item-link-contacts:nth-child(6):before {
+    content: url(../assets/img/icons/telegram-icon24x24.png);
+    margin: 0 10px 0 0;
+}
+
+.global-paragraph { /*Добавил параграфам с текстом отступы*/
+    margin: 5% 15%;
+}
+.main-code {/*уменьшил блок кода и разместил по центру*/
+    width: 100%;
+    margin: 0 0 0 0%;
+}
+pre {
+    background-color: rgba(139, 170, 160, 0.1);
+    width: 80%;
+    margin: 0 0 0 10%;
+    padding-left: -20%;
+}
+.courses-list { /*icons before courses list*/
+    list-style: none;
+    margin: 5% 5%;
+}
+
+.main-section .courses-item::before {
+    content: url(../assets/img/icons/circles/circle-solid16x16.png);
+    margin: 0 10px 0 0;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+}
+
+
+.footer-year {
+    font-weight: 500;
+}
+
+.rsschool-logo {
+    width: 80%;
+    margin: 10% 0;
+}
+
+.github-link {
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 0 0 0 10px;
+}
+
+/*Link animation*/
+.github-link { 
+    background-image: linear-gradient(CurrentColor, CurrentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 1px;
+    transition: background-size 0.5s;
+}
+.github-link:hover {
+    background-size: 100% 1px;
+}
