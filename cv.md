@@ -36,6 +36,7 @@ function combineArrays(first, second) {
   }
 
   return arrN;
+}
 ```
 ### No IT work experience...yet ;)
 ***
